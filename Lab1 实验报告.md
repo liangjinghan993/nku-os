@@ -180,7 +180,7 @@ void exception_handler(struct trapframe *tf) {
 
 #### 实现截图
 
-![image.png](https://note.youdao.com/yws/res/239/WEBRESOURCE85eb70a9ba1647f6a8ab670d0d68932e)
+![image.png](https://gitee.com/liang-jinghan888/nku-operating-system-2023/raw/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/1-2.jpg)
 
 ## 本实验重要知识点
 
