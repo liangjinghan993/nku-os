@@ -57,7 +57,7 @@ case IRQ_S_TIMER:
 
 #### 实现截图：
 
-![74066fe463c51adcc38e911442e4b57.jpg](https://note.youdao.com/yws/res/144/WEBRESOURCEad454a4bed8565f86563113827fbaff2)
+![74066fe463c51adcc38e911442e4b57.jpg](https://gitee.com/liang-jinghan888/nku-operating-system-2023/raw/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/1-1.png)
 
 ## Challenge1：描述与理解中断流程
 
