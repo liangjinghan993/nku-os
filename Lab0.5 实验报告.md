@@ -37,7 +37,7 @@
 
 QEMU窗口：
 
-![](https://gitee.com/zhang-chuanchang/nku_os_ucore/raw/master/lab/2.png)
+![](https://gitee.com/liang-jinghan888/nku-operating-system-2023/raw/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/0.5-1.png)
 
 kern/init/entry.S是内核的入口点，这个入口点调用了kern\_init函数，kern\_init位于kern/init/init.c中，其作用是打印出一串字符串，然后进入一个while的死循环，完成RISCV的启动。
 
