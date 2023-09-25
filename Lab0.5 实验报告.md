@@ -52,7 +52,7 @@ kern/init/entry.S是内核的入口点，这个入口点调用了kern\_init函�
 
 *   break \*0x80200000：在0x80200000处设置断点，continue执行命令直到断点，RISCV输出一串字符，执行了kern\_init函数，操作系统启动完成（内核镜像 os.bin 被加载到以物理地址 0x80200000 开头的区域上）
 
-![image.png](https://note.youdao.com/yws/res/76/WEBRESOURCEdb39ba898d1b30714d60093fcabb646d)
+
 
 ## RISC-V加电后完成了哪些功能？
 
