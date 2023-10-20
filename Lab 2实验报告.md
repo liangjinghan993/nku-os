@@ -366,11 +366,11 @@ const struct pmm_manager best_fit_pmm_manager = {
 
 make qemu：
 
-![image.png](https://note.youdao.com/yws/res/512/WEBRESOURCE95d66c508dd893e89b1720cd8a37ab94)
+![image.png](https://gitee.com/liang-jinghan888/nku-operating-system-2023/raw/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-10-20%20142858.png)
 
 make grade：
 
-![image.png](https://note.youdao.com/yws/res/515/WEBRESOURCEe2d1d48a9d77f184f121faefec3a6966)
+![image.png](https://gitee.com/liang-jinghan888/nku-operating-system-2023/raw/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-10-20%20142950.png)
 
 实现过程简述：
 
@@ -429,11 +429,11 @@ best-fit算法进一步的改进空间：
 
 伙伴算法（Buddy system）把所有的空闲页框分为11个块链表，每块链表中分布包含特定的连续页框地址空间，比如第0个块链表包含大小为2^0  ^个连续的页框，第1个块链表中，每个链表元素包含2个页框大小的连续地址空间，….，第10个块链表中，每个链表元素代表4M的连续地址空间。每个链表中元素的个数在系统初始化时决定，在执行过程中，动态变化。伙伴算法每次只能分配2的幂次页的空间，比如一次分配1页，2页，4页，8页，…，1024页等等，每页大小一般为4K，因此，伙伴算法最多一次能够分配4M的内存空间。
 
-![image.png](https://note.youdao.com/yws/res/600/WEBRESOURCE5c849a6023b45cf89f87a42d50b3dee5)
+![image.png](https://gitee.com/liang-jinghan888/nku-operating-system-2023/raw/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-10-20%20143032.png)
 
-![](https://pic1.zhimg.com/v2-cbb02e970c554dcb2f0b5cc7ee981bc0_r.jpg)
+![](https://gitee.com/liang-jinghan888/nku-operating-system-2023/raw/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-10-20%20143055.png)
 
-![](https://pic3.zhimg.com/v2-1f018170ff3159ef45e47adfb6b227ce_r.jpg)
+
 
 1.2 内存分配
 
@@ -448,7 +448,7 @@ best-fit算法进一步的改进空间：
 
 分配函数为alloc\_pages，最终调用到\_\_alloc\_pages\_nodemask
 
-![](https://pic1.zhimg.com/v2-ad61748643672b0243a4cc8f0ac5ad54_r.jpg)
+![](https://gitee.com/liang-jinghan888/nku-operating-system-2023/raw/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-10-20%20143119.png)
 
     struct page *
     __alloc_pages_nodemask(gfp_t gfp_mask, unsigned int order,
@@ -935,7 +935,7 @@ buddy\_pmm.h
 
     #endif /* ! __KERN_MM_BUDDY_PMM_H__ */
 
-![image.png](https://note.youdao.com/yws/res/644/WEBRESOURCE1b339c692cc0793e3d0d86f123460385)
+![image.png](https://gitee.com/liang-jinghan888/nku-operating-system-2023/raw/master/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-10-20%20143151.png)
 
 ***
 
